@@ -114,3 +114,84 @@ section.main_box-project {
 section.planets_list {
   padding: 40px 0px;
 }
+
+body:has(.parent_div_cal) header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body:has(.parent_div_cal) {
+  background-color: rgb(56, 191, 211);
+  font-size: 18px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 87px;
+}
+
+.parent_div_cal {
+  width: 320px;
+  text-align: center;
+  border: 10px solid #333;
+  background-color: whitesmoke;
+  border-radius: 6px;
+}
+
+.container_calculator .keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+}
+
+.container_calculator input {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(30, 15, 15);
+  border: 0;
+  color: white;
+  padding: 0 10px;
+  text-align: right;
+  font-size: 32px;
+  border-radius: 0 0 4px 4px;
+}
+
+.container_calculator input:focus,
+.container_calculator input:focus-visible,
+.container_calculator input:hover {
+  outline: none;
+}
+
+.parent_div_cal h2 {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 18px 0;
+  margin: 0;
+}
+
+.container_calculator button {
+  border: 0;
+  background-color: black;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(30, 15, 15);
+}
+
+.clear {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+#calc {
+  grid-column: 3/5;
+  grid-row: 5;
+}
