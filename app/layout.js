@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import Link from "next/link";
+import Image from "next/image";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,7 +13,39 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header>
+          <div className="container">
+            <div className="menu_header">
+              <div className="logo">
+                <Image
+                  className="logo_img"
+                  src="/next.svg"
+                  alt="Next.js Logo"
+                  width={180}
+                  height={37}
+                  priority
+                />
+              </div>
+              <ul className="menus">
+                <li>
+                  <Link href="/planet">Planets</Link>
+                </li>
+                <li>
+                  <Link href="/weather">Weather</Link>
+                </li>
+                <li>
+                  <Link href="/calculator">Calculator</Link>
+                </li>
+                <li>
+                  <Link href="/planet">About Me</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
