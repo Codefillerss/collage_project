@@ -195,3 +195,140 @@ body:has(.parent_div_cal) {
   grid-column: 3/5;
   grid-row: 5;
 }
+
+
+/* About Me CSS */
+.section-padding {
+  background-color: #1a1a1a !important;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.row.lg-marg {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+
+.about-crev .left-block {
+  position: relative;
+  z-index: 3;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.about-crev .left-block .info {
+  padding: 0 60px;
+  margin-top: -30px;
+}
+
+.main-color {
+  color: #14cf93 !important;
+}
+
+.fz-50 {
+  font-size: 50px !important;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.about-crev p {
+  line-height: 1.8;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  color: #c6c8c9;
+  margin: 0;
+}
+
+.fit-img {
+  overflow: hidden;
+}
+
+.radius-30 {
+  border-radius: 30px !important;
+}
+
+.fit-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.about-crev .left-block .mz-shap {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.row.lg-marg>* {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.valign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.sub-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.main-color {
+  color: #14cf93 !important;
+}
+
+.about-crev h2 {
+  color: white;
+  font-size: 50px;
+}
+
+.bord-thin-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding-top: 40px !important;
+  margin-top: 40px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.fz-16 {
+  font-size: 16px !important;
+}
+
+.bord-thin-top p {
+  color: #c6c8c9;
+}
+
+.bord-thin-top h6 {
+  color: white;
+}

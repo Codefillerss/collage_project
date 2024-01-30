@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                   <Link href="/calculator">Calculator</Link>
                 </li>
                 <li>
-                  <Link href="/planet">About Me</Link>
+                  <Link href="/kanak">About Me</Link>
                 </li>
               </ul>
             </div>
