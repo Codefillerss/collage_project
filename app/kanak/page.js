@@ -1,4 +1,7 @@
 "use client";
+
+import Image from "next/image";
+
 const kanak = () => {
   return (
     <div className="kanak_portfolio">
@@ -19,7 +22,12 @@ const kanak = () => {
                   </div>
                   <div>
                     <div className="img fit-img radius-30">
-                      <img src="/kanak.jpg" alt="" />
+                      <Image
+                        src="/kanak.jpg"
+                        alt="Kanak Image"
+                        width={320}
+                        height={400}
+                      />
                     </div>
                   </div>
                 </div>
